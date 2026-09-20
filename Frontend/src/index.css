@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #14161A;
+  --color-surface: #1C1F26; /* for cards, modals, etc. */
+  --color-elevated: #242833; /* for cards, modals, etc. */
+  --color-line: #2E333D; /* for borders, dividers, etc. */
+  --color-ink: #E8E6E1; /* for text, icons, etc. */
+  --color-muted: #9AA0AA; /* for secondary text, icons, etc. */
+  --color-accent: #7DC4A5; /* for buttons, links, highlights, etc. */
+  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+}
+
+html {
+  background-color: var(--color-bg);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+
+/* Text cards: stretch to fill the row, however many there are */
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+/* Project cards: keep a sensible card size, one per row on phones */
+.media-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}

@@ -1,0 +1,92 @@
+Personal_Portfolio/
+├── .github/
+│   └── workflows/
+│       └── keep-alive.yml
+├── .gitignore
+├── Backend/
+│   ├── .env
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   ├── manage.py
+│   ├── portfolio/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── admin_api.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── notifications.py
+│   │   ├── serializers.py
+│   │   ├── tests.py
+│   │   ├── uploads.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   └── requirements.txt
+├── Frontend/
+│   ├── .env
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public/
+│   │   ├── favicon.png
+│   │   ├── favicon.svg
+│   │   ├── favicon2.png
+│   │   └── icons.svg
+│   ├── README.md
+│   ├── src/
+│   │   ├── admin/
+│   │   │   ├── AdminLayout.jsx
+│   │   │   ├── AdminLogin.jsx
+│   │   │   ├── ImageField.jsx
+│   │   │   ├── Messages.jsx
+│   │   │   ├── Overview.jsx
+│   │   │   ├── ProjectImages.jsx
+│   │   │   ├── ResourceManager.jsx
+│   │   │   └── resources.js
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── assets/
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   ├── components/
+│   │   │   ├── AboutSection.jsx
+│   │   │   ├── ContactSection.jsx
+│   │   │   ├── DownloadCv.jsx
+│   │   │   ├── ExpertiseSection.jsx
+│   │   │   ├── hero.css
+│   │   │   ├── Hero.jsx
+│   │   │   ├── LoadMore.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Reveal.jsx
+│   │   │   ├── Section.jsx
+│   │   │   ├── toastContext.js
+│   │   │   ├── ToastProvider.jsx
+│   │   │   ├── ui/
+│   │   │   │   ├── Button.jsx
+│   │   │   │   └── Spinner.jsx
+│   │   │   └── WorkSection.jsx
+│   │   ├── hooks/
+│   │   │   ├── useApi.js
+│   │   │   ├── useAvatarTheme.js
+│   │   │   └── useSmoothScroll.js
+│   │   ├── index.css
+│   │   ├── lib/
+│   │   │   ├── adminApi.js
+│   │   │   ├── api.js
+│   │   │   ├── format.js
+│   │   │   └── generateResume.jsx
+│   │   ├── main.jsx
+│   │   └── pages/
+│   │       ├── Home.jsx
+│   │       ├── ProjectDetail.jsx
+│   │       └── Work.jsx
+│   └── vite.config.js
+├── generate_project_tree.py
+└── tree_full.txt

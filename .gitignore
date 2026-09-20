@@ -1,0 +1,24 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+Backend/media/
+Backend/staticfiles/
+
+# Node
+node_modules/
+Frontend/dist/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
